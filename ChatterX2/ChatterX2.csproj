@@ -203,6 +203,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703011636104_InitialCreate.cs" />
+    <Compile Include="Migrations\201703011636104_InitialCreate.Designer.cs">
+      <DependentUpon>201703011636104_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703011709107_toID.cs" />
+    <Compile Include="Migrations\201703011709107_toID.Designer.cs">
+      <DependentUpon>201703011709107_toID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Chat.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -296,6 +305,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201703011636104_InitialCreate.resx">
+      <DependentUpon>201703011636104_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703011709107_toID.resx">
+      <DependentUpon>201703011709107_toID.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
