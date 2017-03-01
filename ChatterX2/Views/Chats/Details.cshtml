@@ -1,4 +1,4 @@
-﻿@model ChatterX2.Models.Chat
+﻿@model ChatterX2.Models.ChatViewModel
 
 @{
     ViewBag.Title = "Details";
@@ -11,16 +11,20 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Chats)
+            @Html.DisplayNameFor(model => model.ChatView.Chats)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Chats)
+            @Html.DisplayFor(model => model.ChatView.Chats)
+        </dd>
+        
+        <dd>
+            @Html.DisplayFor(model => model.AppUser.Email)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ChatView.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
